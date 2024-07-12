@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Performance</title>
+  <link rel="stylesheet" href="campaign_performance.css">
+</head>
+
+<body>
+  <h1>Campaign Performance</h1>
+  <p>This page presents visualizations of marketing data in the form of Looker Dashboards.</p>
+
+  <div class="dashboard-selection">
+    <label for="dashboard-select">Select a dashboard to be displayed:</label>
+    <select name="dashboard-select" id="dashboard-select">
+      <option value="1">Dashboard 1</option>
+      <option value="2">Dashboard 2</option>
+      <option value="3">Dashboard 3</option>
+    </select>
+  </div>
+
+  <button id="generate-dashboard">Generate Dashboard</button>
+
+  <div id="dashboard-container">
+    <p>The selected dashboard will be displayed here.</p>
+  </div>
+
+</body>
+
+</html>

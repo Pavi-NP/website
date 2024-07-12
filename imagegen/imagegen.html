@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Generation</title>
+  <link rel="stylesheet" href="image_generation.css">
+</head>
+
+<body>
+  <h1>Image Generation</h1>
+  <p>Create prompts and generate images using your imagination.</p>
+
+  <h2>Select a Pre-Populated Prompt:</h2>
+  <select id="predefined-prompts">
+    <option value="handbag_kitchen_counter">A photo of a handbag on a kitchen counter, natural lighting, 4k</option>
+    <option value="handbag_beach_1">A photo of a handbag on the beach, natural lighting, 4k</option>
+    <option value="handbag_beach_2">A photo of a handbag on a beach, sunset, summer vibes</option>
+  </select>
+
+  <h2>[Optional] Write a Custom Prompt:</h2>
+  <div id="custom-prompt-container" style="display: none;">
+    <textarea id="custom-prompt" placeholder="Provide a custom prompt to generate images."></textarea>
+  </div>
+  <button id="toggle-custom-prompt">Write Custom Prompt</button>
+
+  <h2>Model Parameters:</h2>
+  <div class="parameter-container">
+    <label for="num-samples">Number of Samples:</label>
+    <select id="num-samples">
+      <option value="8">8</option>
+      <option value="4">4</option>
+      <option value="2">2</option>
+      <option value="1">1</option>
+    </select>
+  </div>
+
+  <div class="parameter-container">
+    <label for="image-size">Sample Image Size:</label>
+    <select id="image-size">
+      <option value="64">64x64</option>
+      <option value="256" selected>256x256</option>
+      <option value="512">512x512</option>
+      <option value="1024">1024x1024</option>
+    </select>
+  </div>
+
+  <div class="parameter-container">
+    <label for="aspect-ratio">Aspect Ratio:</label>
+    <select id="aspect-ratio">
+      <option value="1:1" selected>1:1 (Square)</option>
+      <option value="5:4">5:4 (Portrait)</option>
+    </select>
+  </div>
+
+  <button id="generate-images">Generate Images</button>
+
+  <div id="image-results">
+    </div>
+
+  <script>
+    // Add your JavaScript logic here to handle prompt selection,
+    // custom prompt input, model parameter changes,
+    // and image generation functionality.
+    // You'll also need to populate the #image-results section
+    // with the generated images.
+  </script>
+</body>
+
+</html>
+

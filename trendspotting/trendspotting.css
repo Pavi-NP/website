@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendspotting</title>
+    <link rel="stylesheet" href="trendspotting.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Google Trends Dashboard</h1>
+        <!-- Google Trends Dashboard Placeholder -->
+        <div id="trends-dashboard">
+            <!-- Embed Google Trends Dashboard here -->
+        </div>
+
+        <h2>News Summarization Section</h2>
+        <form id="summarization-form">
+            <label for="keywords">Keywords:</label>
+            <input type="text" id="keywords" name="keywords" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="number-of-articles">Number of Articles:</label>
+            <input type="number" id="number-of-articles" name="number-of-articles" required>
+            <button type="submit">Summarize News</button>
+        </form>
+
+        <div id="summaries">
+            <!-- Summaries will be displayed here -->
+        </div>
+
+        <button id="save-summaries">Save Summaries</button>
+    </div>
+
+    <script>
+        document.getElementById('summarization-form').onsubmit = function(event) {
+            event.preventDefault();
+            // Fetch and display news summaries based on form input
+        };
+
+        document.getElementById('save-summaries').onclick = function() {
+            // Save the summaries to a campaign for later reference
+        };
+    </script>
+</body>
+</html>

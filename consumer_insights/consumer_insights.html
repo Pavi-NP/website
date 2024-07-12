@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumer Insight</title>
+  <link rel="stylesheet" href="consumer_insights.css">
+</head>
+
+<body>
+  <h1>Consumer Insight- Marketing Assets</h1>
+  <p>This page demonstrates how to use Vertex AI Search to find marketing assets.</p>
+
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Enter your search query">
+    <button class="search-button">Search</button>
+  </div>
+
+  <div id="search-results">
+    </div>
+
+  <script>
+    // Replace with your Vertex AI Search integration logic here
+    // This script should handle user input from the search box
+    // and display the retrieved marketing assets in the #search-results element
+    const searchInput = document.querySelector('.search-input');
+    const searchButton = document.querySelector('.search-button');
+    const searchResults = document.getElementById('search-results');
+
+    searchButton.addEventListener('click', () => {
+      const query = searchInput.value;
+      // Implement your logic to search Vertex AI Search using the query
+      // and update the searchResults element with the retrieved assets
+      // (e.g., by creating new elements or modifying existing content)
+      searchResults.innerHTML = `<p>Search results for "${query}" will be displayed here.</p>`; // Placeholder text
+    });
+  </script>
+</body>
+
+</html>

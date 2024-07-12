@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Copy</title>
+    <link rel="stylesheet" href="email.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Email Copy</h1>
+        <p>This page provides a guided process for generating email copy. The following is a brief list of emails that can be used as a sample to generate email copies.</p>
+        <div id="content">
+            <!-- Content will be loaded here based on the selection -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('marketing-insights-link').onclick = function(event) {
+            event.preventDefault();
+            document.getElementById('content').innerHTML = '<h2>Marketing Insights</h2><p>Explore Dashboard content here...</p>';
+        };
+
+        document.getElementById('audience-link').onclick = function(event) {
+            event.preventDefault();
+            document.getElementById('content').innerHTML = '<h2>Audience</h2><p>Talk to data from SQL content here...</p>';
+        };
+
+        document.getElementById('trendspotting-link').onclick = function(event) {
+            event.preventDefault();
+            document.getElementById('content').innerHTML = '<h2>Trendspotting</h2><p>Keywords and news summarisation content here...</p>';
+        };
+
+        document.getElementById('consumer-insights-link').onclick = function(event) {
+            event.preventDefault();
+            document.getElementById('content').innerHTML = '<h2>Consumer Insights</h2><p>Search insights based on consumer studies and reports content here...</p>';
+        };
+    </script>
+</body>
+</html>

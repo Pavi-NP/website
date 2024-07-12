@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activation Optimization</title>
+    <link rel="stylesheet" href="activation_optimization.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Activation Optimization</h1>
+        <ul>
+            <li><a href="#" id="content_review">Content Review & Activation - Edit, review and publish content</a></li>
+            <li><a href="#" id="campaign">Campaign Performance - TAnalyse and optimize performance of your campaign</a></li>
+            <li><a href="#" id="adsbot">Ads Helper Bot - Get help from ads multi-channel helper</a></li>
+        </ul>
+        
+        <div id="content">
+            <!-- Content will be loaded here based on the selection -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('marketing-insights-link').onclick = function(event) {
+            event.preventDefault();
+            document.getElementById('content').innerHTML = '<h2>Marketing Insights</h2><p>Explore Dashboard content here...</p>';
+        };
+
+        document.getElementById('audience-link').onclick = function(event) {
+            event.preventDefault();
+            document.getElementById('content').innerHTML = '<h2>Audience</h2><p>Talk to data from SQL content here...</p>';
+        };
+
+        document.getElementById('trendspotting-link').onclick = function(event) {
+            event.preventDefault();
+            document.getElementById('content').innerHTML = '<h2>Trendspotting</h2><p>Keywords and news summarisation content here...</p>';
+        };
+
+        document.getElementById('consumer-insights-link').onclick = function(event) {
+            event.preventDefault();
+            document.getElementById('content').innerHTML = '<h2>Consumer Insights</h2><p>Search insights based on consumer studies and reports content here...</p>';
+        };
+    </script>
+</body>
+</html>
